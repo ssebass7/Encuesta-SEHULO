@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<title>Encuesta de Satisfacción Sehulo</title>
+	<link rel="icon" href="img/logo_horizontal.png" type="image/png" sizes="0.01x0.4">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+	<!--LIBRERÍA PARA MOVIMIENTO-->
+	<link href="library/motion.css" rel="stylesheet">
+
+	<!--LIBRERÍA PARA FOOTER-->
+	<link rel="stylesheet" type="text/css" href="library/footer.css">
+
+	<!--LIBRERÍA PARA SCROLL-->
+	<script src="library/scrollreveal.js"></script>
+
+
+	<!--LIBRERÍA PARA GOOGLE ICONS-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+
+
+    <section class="modal">
+        <div class="modal__container">
+			<!--<div class="contenedor_led">
+				<span style="--l: 'B';">B</span>
+      			<span style="--l: 'i';">i</span>
+      			<span style="--l: 'e';">e</span>
+      			<span style="--l: 'n';">n</span>
+     			<span style="--l: 'v';">v</span>
+				 <span style="--l: 'e';">e</span>
+				 <span style="--l: 'n';">n</span>
+				 <span style="--l: 'i';">i</span>
+				 <span style="--l: 'd';">d</span>
+				 <span style="--l: 'o';">o</span>
+			</div>-->
+
+			<div class="contenedor_logo_modal">
+			
+            <img src="svg/logo_modal.svg" class="modal_titulo">
+			<div class="flex_titulo_modal">
+				<div class="contenedor_nombre_empresa_modal">
+					<ul class="dynamic-txts">
+					<li><span class="txt_nombre_empresa_modal">sehulo</span></li>
+				</ul>
+				</div>
+				<div class="contenedor_slogan_empresa_modal">
+					<ul class="dynamic-txts_slogan">
+						<li><span class="txt_slogan_empresa_modal">Always in Development</span></li>
+					</ul>
+				</div>
+				</div>
+            <!--<h2 class="modal__title">¡Bienvenido al sitio!</h2>-->
+			
+			</div>
+            <p class="modal__paragraph">Acabas de vivir una experiencia con <b>Sehulo</b>. Nos encantará que puedas compartir con nosotros tus impresiones.<br>¡Gracias! Serán solo 2 minutos de tu tiempo.</p>
+            <a href="#" class="modal__close">Aceptar</a>
+        </div>
+    </section>
+
+	<nav id="navbar">
+		<section class="flex-container_navbar">
+			<div class="div_navbar">
+				<img src="svg/logo.svg" alt="logo" width="40" height="40" class="d-inline-block align-text-top" id="img_navbar">
+			</div>
+			<div class="div_navbar">
+				<a class="txt_navbar" href="#">
+					sehulo
+				</a>
+			</div>
+		</section>
+
+
+
+		<div class="menu-btn">
+			<div class="menu-btn__burger"></div>
+		</div>
+
+
+<section class="nav-links">
+	<div class="contenedor_nav_link1">
+		<a href="#"><button onclick="" class="boton seis" id="info_btn">
+			<span>Sehulo</span>
+			<svg>
+				<rect x="0" y="0" fill="none"></rect>
+			</svg>
+		</button></a>
+	</div>
+	<div class="contenedor_nav_link2">
+		<a href="#"><button onclick="" class="boton seis" id="aviso_btn">
+			<span>Aviso</span>
+			<svg>
+				<rect x="0" y="0" fill="none"></rect>
+			</svg>
+		</button></a>
+	</div>
+	<div class="contenedor_nav_link3">
+		<a href="#"><button class="boton seis" id="empresa_btn">
+			<span>Ayuda</span>
+			<svg>
+				<rect x="0" y="0" fill="none"></rect>
+			</svg>
+		</button></a>
+	</div>
+	
+	<div class="div_ilustracion_menu_1"><img class="ilustracion_menu_1" src="svg/figura_1_fondo_menu.svg"></div>
+	<div class="div_ilustracion_menu_2"><img class="ilustracion_menu_2" src="svg/figura_2_fondo_menu.svg"></div>
+</section>
+</nav>
+
+
+
+<form class="formulario" id="encuestaSatisfaccion" ><!--method="POST"-->
+
+	<div class="div_portada">	
+		<img src="img/portada-min1.png" class="img-fluid" alt="Responsive image">
+		
+		<section class="section_dibujo">
+			<div class="contenedor_hand_movil" id="contenedor_hand_movil">
+				<img src="svg/hand_movil.svg" class="svg_hand_movil">
+			</div>
+		
+			<div class="contenedor_hand" id="contenedor_hand">
+				<img src="svg/hand.svg" class="svg_hand">
+			</div>
+			<div class="contenedor_paper_1" id="contenedor_paper_1">
+				<img src="svg/paper_1.svg" class="svg_paper_1">
+			</div>
+			<div class="contenedor_paper_2" id="contenedor_paper_2">
+				<img src="svg/paper_2.svg" class="svg_paper_2">
+			</div>
+			<div class="contenedor_paper_3" id="contenedor_paper_3">
+				<img src="svg/paper_3.svg" class="svg_paper_3">
+			</div> 
+			<div class="contenedor_paper_4" id="contenedor_paper_4">
+				<img src="svg/paper_4.svg" class="svg_paper_4">
+			</div>
+			<div class="contenedor_paper_5" id="contenedor_paper_5">
+				<img src="svg/paper_5.svg" class="svg_paper_5">
+			</div>
+			<div class="contenedor_paper_6" id="contenedor_paper_6">
+				<img src="svg/paper_6.svg" class="svg_paper_6">
+			</div>
+			<div class="contenedor_paper_7" id="contenedor_paper_7">
+				<img src="svg/paper_7.svg" class="svg_paper_7">
+			</div>
+			<div class="contenedor_paper_8" id="contenedor_paper_8">
+				<img src="svg/paper_8.svg" class="svg_paper_8">
+			</div>
+		
+			</section>
+	</div>
+
+	<section class="contenedor_titulo_portada">
+		<div class="flex_titulo_portada">
+		<div class="contenedor_nombre_empresa">
+			<p class="txt_nombre_empresa">sehulo</p>
+		</div>
+		<div class="contenedor_slogan_empresa">
+			<p class="txt_slogan_empresa">Always in Development</p>
+		</div>
+		</div>
+		</section>
+
+	
+
+	<div class="contenedor_ancla">
+		<a class="anchor_link" href="#titulo">
+			<span class="material-icons-outlined" id="icon_cabecera">
+				keyboard_double_arrow_down
+			</span></a>
+	</div>
+	
+
+			<section class="flex-container_titulo" id="titulo">
+
+				<div class="titulo" > 
+					<p class="txt_titulo" data-aos="fade-down">Encuesta de Satisfacción: <b>"Taller Creativo Design Thinking II - 03Jun21"</b></p>
+				</div>
+			</section>
+
+			<div class="fondo_global"> <img src="svg/fondo_global.svg" class="img_fondo_global"></div>
+
+
+
+			<div class="div_flex-container_contenido_global">
+
+
+				<div class="slides">
+					<!--radio buttons start-->
+					<input class="inputRadio" type="radio" name="radio-btn" id="radio1">
+					<input class="inputRadio" type="radio" name="radio-btn" id="radio2">
+					<input class="inputRadio" type="radio" name="radio-btn" id="radio3">
+					<input class="inputRadio" type="radio" name="radio-btn" id="radio4">
+					<!--radio buttons end-->
+
+					<!--slide images start-->
+					<div class="slide first">
+
+
+
+
+
+						<section class="flex-container_contenido">
+							<div class="titulo_principal_contenido" data-aos="fade-up"> 
+								<p class="txt_titulo_principal_contenido" >¿Qué te ha parecido la actividad de Sehulo?</p>
+								<p class="txt_contenido">Calificación: (de 1 a 10)</p>
+							</div>
+		
+		
+							<div class="range" data-aos="fade-up"> 
+								<div class="sliderValue">
+									<span id="numero_puntuacion">5</span>
+								</div>
+								<div class="field">
+									<div class="value left">1</div>
+									<input id="inputRange" type="range" min="1" max="10" value="5" steps="1">
+									<div class="value right">10</div>
+								</div>
+							</div>
+		
+							<div data-aos="fade-up">
+							<div class="messageValue" > 
+								<span id="mensaje_puntuacion">Mmm...Desliza</span>
+							</div>
+		
+		
+							<button class="boton_aceptar principal" id="boton_principal" type="button">
+								<div class="icono">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+									</svg>
+								</div>
+								<span>Aceptar</span>
+							</button>
+						</div>
+						</section>
+
+
+
+
+
+
+
+					  </div>
+					  <div class="slide">
+
+
+
+
+
+
+						<section class="flex-container_contenido_2" id="contenido2">
+					<div class="titulo_principal_contenido" data-aos="fade-up"> 
+						<p class="txt_titulo_principal_contenido" >¿Qué aspectos no han estado a la altura?</p>
+						<p class="txt_contenido">Puedes seleccionar varios.</p>
+					</div>
+
+					<div class="checkbox" data-aos="fade-up">
+						<input type="checkbox" name="checkbox" id="checkbox1">
+						<label for="checkbox1">Metodología</label>
+					
+						<input type="checkbox" name="checkbox" id="checkbox2">
+						<label for="checkbox2"> Contenido</label>
+
+						<input type="checkbox" name="checkbox" id="checkbox3">
+						<label for="checkbox3">Consultor</label>
+
+						<input type="checkbox" name="checkbox" id="checkbox4">
+						<label for="checkbox4">Grupo de trabajo</label>
+
+						<div class="div_otros">
+						<input type="checkbox" name="checkbox" id="checkbox5">
+						<label for="checkbox5">Otros</label>
+
+						<input id="txtOtros" type="text" name="txtOtros" placeholder="Otro Aspecto"/>
+						</div>
+					</div>
+					<div data-aos="fade-up">
+					<div class="div_txtArea">
+					<p class="txt_contenido">Tus ideas nos ayudan. ¿Puedes indicarnos cómo podemos mejorar?</p>
+					<textarea id="txtArea_contenido2" name="txtareaOtros" placeholder="Introduce un comentario" rows=""></textarea>
+					</div>
+
+					<div class="flex-container_botones">
+					<button class="boton_aceptar principal boton1" id="boton1_contenido2" type="button">
+						<div class="icono">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+							</svg>
+						</div>
+						<span>Enviar</span>
+					</button>
+					<button class="boton_aceptar principal boton2" id="boton2_contenido2" type="button">
+						<div class="icono">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+								<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+							</svg>
+						</div>
+						<span>Cancelar</span>
+					</button>
+				</div>
+			</div>
+
+				</section>
+				
+			
+		
+					
+
+					  </div>
+
+					  <div class="slide">
+
+						<section class="flex-container_contenido_3">
+
+							<div class="titulo_principal_contenido" data-aos="fade-up"> 
+								<p class="txt_titulo_principal_contenido" >Indícanos, qué aspectos debemos mejorar para conseguir tu plena satisfacción.</p>
+								<p class="txt_contenido">Introduce comentario:</p>
+		
+								<div class="div_txtArea_contenido3" data-aos="fade-up">
+									<textarea id="txtArea_contenido3" name="txtareaOtros" placeholder="Introduce un comentario" rows=""></textarea>
+									</div>
+							</div>
+		
+							<div class="flex-container_botones">
+								<button class="boton_aceptar principal boton1" id="boton1_contenido3" type="button" data-aos="fade-up">
+									<div class="icono">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+										</svg>
+									</div>
+									<span>Enviar</span>
+								</button>
+								<button class="boton_aceptar principal boton2" id="boton2_contenido3" type="button" data-aos="fade-up">
+									<div class="icono">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+										</svg>
+									</div>
+									<span>Cancelar</span>
+								</button>
+							</div>
+						</section>
+					  </div>
+
+					  
+					  <div class="slide">
+						<section class="flex-container_contenido_4">
+
+							<div class="titulo_principal_contenido" data-aos="fade-up"> 
+								<p class="txt_titulo_principal_contenido" >¡WOW! Qué gusto haber acertado... Un placer haber contado contigo.</p>
+								<p class="txt_contenido">Si quieres añadir algún comentario más, estaremos encantados de escucharte:</p>
+		
+								<div class="div_txtArea_contenido4" data-aos="fade-up">
+									<textarea id="txtArea_contenido4" name="txtareaOtros" placeholder="Introduce un comentario" rows=""></textarea>
+									</div>
+							</div>
+		
+							<div class="flex-container_botones">
+								<button class="boton_aceptar principal boton1" id="boton1_contenido4" type="button" data-aos="fade-up">
+									<div class="icono">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+										</svg>
+									</div>
+									<span>Enviar</span>
+								</button>
+								<button class="boton_aceptar principal boton2" id="boton2_contenido4" type="button" data-aos="fade-up">
+									<div class="icono">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+										</svg>
+									</div>
+									<span>Cancelar</span>
+								</button>
+							</div>
+						</section>
+					  </div>
+						
+
+						<!--slide images end-->
+
+						
+				
+						
+						
+				
+				</div>
+
+				
+
+				<div class="div_svg_contenido rellax" data-rellax-speed="1"  data-aos="fade-up">
+					<img src="svg/svg_contenido_3.svg" class="svg_contenido">
+				</div>
+			</div>
+
+			<!--manual navigation start-->
+
+
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn" id="selectRadio1"></label>
+				<label for="radio2" class="manual-btn"id="selectRadio2" ></label>
+				<label for="radio3" class="manual-btn" id="selectRadio3"></label>
+				<label for="radio4" class="manual-btn" id="selectRadio4"></label>
+			  </div>
+
+			  
+			  <!--manual navigation end-->
+
+		</form>
+
+		<footer class="footer">
+			<div class="container" data-aos="fade-up">
+				<div class="row">
+					<div class="footer-col footer1">
+						<h4>Sobre Nosotros</h4>
+						<ul>
+							<li><a href="#">Política de Coockies</a></li>
+							<li><a href="#">Aviso legal</a></li>
+							<li><a href="#"> Copyright © 2022 - Sehulo</a></li>
+						</ul>
+					</div>
+					<div class="footer-col footer2">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+		<script>
+			const slideValue = document.getElementById("numero_puntuacion");
+			const inputSlider = document.getElementById("inputRange");
+			const spanSliderMessage = document.getElementById("mensaje_puntuacion");
+
+			inputSlider.oninput = (()=>{
+				let value = inputSlider.value;
+				slideValue.textContent = value;
+				slideValue.style.left = (value*10) + "%";
+				slideValue.classList.add("show");
+
+				if(value < 4){
+					spanSliderMessage.textContent = "Muy floja..."
+					slideValue.classList.add("show");
+				}
+				else if(value > 3 && value < 7){
+					spanSliderMessage.textContent = "Un poquito floja..."
+					slideValue.classList.add("show");
+
+				} else if(value == 7 || value == 8){
+					spanSliderMessage.textContent = "Muy bien... Hay margen de mejora."
+					slideValue.classList.add("show");
+				} else{
+					spanSliderMessage.textContent = "Fantástica...¡Me ha encantado!"
+					slideValue.classList.add("show");
+				}
+			});
+
+			inputSlider.onblur = (()=>{
+				slideValue.classList.remove("show");
+				spanSliderMessage.classList.remove("show");
+			});
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> 
+
+		<!--LIBRERÍA PARA MOVIMIENTO-->
+		<script src="library/motion.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script src="js/index.js"></script>
+		<script src='js/rellax.min.js'></script>
+		<script src="js/rellax-connector.js"></script>
+	</body>
+	</html>
