@@ -770,6 +770,27 @@ width: 50%;
 #icon_cabecera:active{
 	color: rgba(255, 255, 255, 1);
 }
+
+/*
+.contenedor_icon_arriba{
+	position: absolute;
+	bottom: 15%;
+	right: -100px;
+	z-index: 3;
+}
+#icon_arriba{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 2rem;
+	transition: all 1s ease;
+}
+
+#icon_arriba:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+#icon_arriba:active{
+	color: rgba(255, 255, 255, 1);
+}*/
 /*
 
  .degradado_cabecera{

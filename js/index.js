@@ -17,7 +17,7 @@ closeModal.addEventListener('click', (e)=>{
     modal.classList.remove('modal--show');
 });
 
-
+/**FIN MODAL*************/
 /****PARALLAX******************************/
 
 const contenedor_hand_movil = document.getElementById("contenedor_hand_movil"); 
@@ -83,7 +83,7 @@ window.addEventListener('scroll', function(){
 	
 });
 
-
+/****FIN PARALLAX******************************/
 
 
 
@@ -119,6 +119,7 @@ hamburger.addEventListener('click', () => {
   }
 });
 
+/***FIN MENU*******/
 
 /***NAVBAR*********************************************/
 
@@ -157,6 +158,8 @@ window.onscroll = function(){
 
 }
 
+/*****MOVIMIENTO DE SLIDER*****************/ 
+
 var botonAceptar = document.getElementById("boton_principal");
 var botonCancelarCont2 = document.getElementById("boton2_contenido2");
 var botonCancelarCont3 = document.getElementById("boton2_contenido3");
@@ -193,9 +196,9 @@ botonAceptar.addEventListener('click',() =>{
 
 		document.getElementById("radio2").checked = true;
 		
-		selectRadio1.style.background = "";
+		/*selectRadio1.style.background = "";
 
-		selectRadio2.style.background = "#bfc2c2";
+		selectRadio2.style.background = "#bfc2c2";*/
 		
 		
 
@@ -208,9 +211,9 @@ botonAceptar.addEventListener('click',() =>{
 
 		document.getElementById("radio3").checked = true;
 
-		selectRadio1.style.background = "";
+		/*selectRadio1.style.background = "";
 		
-		selectRadio3.style.background = "#bfc2c2";
+		selectRadio3.style.background = "#bfc2c2";*/
 		
 
 
@@ -221,16 +224,18 @@ botonAceptar.addEventListener('click',() =>{
 		disabledContenido3();
 		document.getElementById("radio4").checked = true;
 
-		selectRadio1.style.background = "";
+		/*selectRadio1.style.background = "";
 		
-		selectRadio4.style.background = "#bfc2c2";
+		selectRadio4.style.background = "#bfc2c2";*/
 
 	}
 
 
 });
 
+/*****FIN MOVIMIENTO DE SLIDER**************/
 
+/****MOSTRAR Y OCULTAR CAMPO DE TEXTO DE CONTENIDO 1****************/
 
 var checkboxOtros = document.getElementById("checkbox5");
 
@@ -249,9 +254,9 @@ checkboxOtros.addEventListener('change',function(){
 	}
 });
 
+/*****FIN MOSTRAR Y OCULTAR CAMPO DE TEXTO DE CONTENIDO 1**********/
 
-
-
+/****FUNCIONAMIENTO BOTON CANCELAR*************************/
 botonCancelarCont2.addEventListener('click',() =>{
 cancelar();
 });
@@ -273,6 +278,9 @@ function cancelar(){
 	selectRadio4.style.background = "";
 
 };
+
+/*****FIN FUNCIONAMIENTO BOTON CANCELAR*************/
+/**DESABILITAR FUNCIONAMIENTO DE CONTENIDO NO MOSTRADO (EVITA BUGS)*********************/ 
 
 function disabledContenido2(){
 
@@ -306,8 +314,24 @@ function notdisabledContenido3(){
 	document.getElementById("txtArea_contenido3").disabled = false;
 
 }
+/**FIN DESABILITAR FUNCIONAMIENTO DE CONTENIDO NO MOSTRADO*********/
 
+/****ICONO IR HACIA ARRIBA*********************** */
+/*
+function irArriba(pxPantalla){
+	window.addEventListener('scroll',()=> {
+		var scroll = document.documentElement.scrollTop;
+		var icon_arriba = document.getElementById('icon_arriba');
 
+		console.log(scroll);
 
+		if(scroll > pxPantalla){
+			icon_arriba.style.right = 20 + "px";
 
+		} else{
+			icon_arriba.style.right = -100 + "px";
+		}
+	});
+}
 
+irArriba(500);*/
