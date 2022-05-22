@@ -156,8 +156,26 @@ window.onscroll = function(){
 	
 	prevScrollpos = currentScrollPos;
 
+	/*Ancla lateral Scrolltop*/
+	console.log(document.documentElement.scrollTop);
+	if(document.documentElement.scrollTop > 700) {
+	  document.querySelector('.go-top-container').classList.add('showTopAncla');
+	   
+	}
+	else{
+	
+		document.querySelector('.go-top-container').classList.remove('showTopAncla');
+	
+	}
+
 }
 
+document.querySelector('.go-top-container').addEventListener('click', () => {
+	window.scrollTo({
+	  top: 650,
+	  behavior: 'smooth'
+	});
+  });
 /*****MOVIMIENTO DE SLIDER*****************/ 
 
 var botonAceptar = document.getElementById("boton_principal");
@@ -335,3 +353,7 @@ function irArriba(pxPantalla){
 }
 
 irArriba(500);*/
+
+
+   
+  
