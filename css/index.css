@@ -145,22 +145,22 @@ body{
   .dynamic-txts li span::after{
 	content: "";
 	position: absolute;
-	left: 0;
+	right: 0;
 	bottom: 10px;
 	height: 75%;
 	width: 100%;
 	opacity: 1;
-	background:white;
-	border-left: 2px solid rgb(145, 145, 145);
-	animation: typingTitulo 3s steps(10);
+	background:rgb(255, 255, 255);
+	animation: typingTitulo 3s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
   }
   @keyframes typingTitulo {
-	40%, 60%{
-		left: 0;
+	0%{
+		width: 100%;
 	  }
 	  100%{
-		left: calc(100%);
+		width: 0%;
   		}
   }
 .contenedor_slogan_empresa_modal{
@@ -198,20 +198,17 @@ body{
 	height: 85%;
 	width: 100%;
 	bottom: 0px;
-	background:white;
-	border-left: 2px solid rgb(145, 145, 145);
-	animation: typingSlogan 3s steps(10);
+	background:rgb(255, 255, 255);
+	animation: typingTitulo 3s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
-	
   }
-
-  @keyframes typingSlogan {
-	
-	40%, 60%{
-		left: 0;
+  @keyframes typingTitulo {
+	0%{
+		width: 100%;
 	  }
 	  100%{
-		left: calc(100%);
+		width: 0%;
   		}
 	
   }
@@ -1380,7 +1377,7 @@ width: 50%;
     height: 0%;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10%;
-    cursor: pointer;
+    cursor: poiBnter;
     transition: 0.2s;
     position: absolute;
     top: 50%;
