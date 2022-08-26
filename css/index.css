@@ -1618,54 +1618,46 @@ width: 50%;
 
 }
 
-/*
+
 
 @media (min-width: 577px) and (max-width: 767px){
 
 
-	.descripcion_cabecera{
-
-		margin-left: 40px;
-		margin-right: 40px;
+	.titulo{
+		
+		margin-top: 10px;
 	}
-
-	.titulo{	
-		padding-top: 12px;
-
-	}
-
-	.txt_titulo{
-
-		font-size: 20px;
-	}
-
 
 	.fondo_global{
 
 	}
 
 	.img_fondo_global{
-		height: 700px;
+	height: 600px;	
 	}
 
 	.div_flex-container_contenido_global{
 		
-		top: 120%;
+		top: 130%;
 		
 		
 	}
 
-	.txt_titulo_principal_contenido{
-		font-size: 18px;
+	.div_flex-container_contenido_global{
+
 	}
 
+
+	.titulo_principal_contenido{
+		
+		
+	}
 
 	.range{
-		width: 300px;
+	
 		margin-top: 70px;
 		margin-left: 20px;
 		margin-bottom: 20px;
-
 	}
 
 
@@ -1680,37 +1672,118 @@ width: 50%;
 
 	.messageValue{
 
-		width: 280px;
+		
 		margin-left: 30px;
 
 		
 	}
 
-	.boton_aceptar{
+	#mensaje_puntuacion{
 
-		margin-top: 20px;
-		margin-left: 20px;
+		font-size: 15px;
+
 	}
 
+	.boton_aceptar{
+		margin-top: 20px;
+		margin-left: 20px;
+		font-size: 13px;
+		padding: 5px;
+	}
+
+	/***Boton_principal***********************************************/
+
+	.boton_aceptar#boton_principal{
+		width: 100px;
+		height: 40px;
+	}
+	
+	.boton_aceptar#boton_principal span {
+		left: 20%;
+	}
+		
+	.boton_aceptar#boton_principal:hover .icono {
+		left: calc(100% - 30px);
+		
+	}
+	
+	.boton_aceptar#boton_principal:hover span {
+		left: 10px;
+	}
+
+	/*****BOTON 1******************************************/
+
+	.boton_aceptar.boton1{
+		width: 100px;
+		height: 40px;
+	}
+	
+	.boton_aceptar.boton1 span {
+		left: 25%;
+	}
+		
+	.boton_aceptar.boton1:hover .icono {
+		left: calc(100% - 30px);
+		
+	}
+	
+	.boton_aceptar.boton1:hover span {
+		left: 10px;
+	}
+
+	/*****BOTON 2************************************************/
+
+	.boton_aceptar.boton2{
+		width: 120px;
+		height: 40px;
+		
+	}
+	
+	.boton_aceptar.boton2 span {
+		left: 20%;
+	}
+
+	.boton_aceptar.boton2:hover .icono {
+		left: calc(100% - 25px);
+		
+	}
+	
+	.boton_aceptar.boton2:hover span {
+		left: 10px;
+	}
+
+	
+	.boton_aceptar.principal svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	
+	
+
+	.checkbox{
+		font-size: 15px;
+	}
+
+	
+
 	.svg_contenido{
-		display: none;
+	display: none;
 	}
 
 	.footer-col h4{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 
 	.footer-col ul li a{
-		font-size: 16px;
+		font-size: 15px;
 
 	}
 
 
-
-
 }
-
+/*
 
 @media (min-width: 768px) and (max-width: 991px){
 
