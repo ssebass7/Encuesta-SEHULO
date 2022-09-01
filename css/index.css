@@ -80,26 +80,35 @@ body{
 
 .contenedor_logo_modal{
 	display: flex;
-	justify-content: flex-start; /* "space-between" (DEJAR ESPACIO ENTE ELEMENTOS*/
+	justify-content: center; /* "space-between" (DEJAR ESPACIO ENTE ELEMENTOS*/
 		/*COLOCAR LOS ELEMENTOS EN VARIAR LINEAS*/
-		flex-direction: row;
-		flex-wrap: nowrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	width: 100%;
+
+}
+
+.logo_modal_container{
+	width: 40%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	
 }
 
 .modal_titulo{
-	width: 100%;
 	
+	width: 100%;
 }
 
 
 .flex_titulo_modal{
 	display: flex;
 	justify-content: flex-start; /* "space-between" (DEJAR ESPACIO ENTE ELEMENTOS*/
-		/*COLOCAR LOS ELEMENTOS EN VARIAR LINEAS*/
-		flex-direction: column;
-		flex-wrap: nowrap;
-		margin-left: 5px;
+	/*COLOCAR LOS ELEMENTOS EN VARIAR LINEAS*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: 5px;
 		
 }
 .contenedor_nombre_empresa_modal{
@@ -216,6 +225,7 @@ body{
  
 .modal__paragraph{
 	text-align: center;
+	font-size: calc(0.9em + 1vw);
     margin-bottom: 10px;
 }
 
@@ -224,12 +234,16 @@ body{
     color: #ffffff;
 	font-family: letra;
     background-color: #EB762F;
-    padding: 10px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
     border: 1px solid ;
     border-radius: 6px;
     display: inline-block;
     font-weight: 300;
     transition: background-color .3s;
+	font-size: calc(0.6em + 1vw);
 }
 
 .modal__close:hover{
@@ -284,6 +298,7 @@ padding-bottom: 5px;
 	text-decoration: none;
 	color: black;
 	font-family: montserrat_bold;
+	font-size: calc(0.7em + 1vw);
 }
 
 .txt_navbar:hover{
@@ -400,7 +415,7 @@ padding-bottom: 5px;
   .nav-links div a {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
-  font-size: 16px;
+  
 }
 
 .boton {
@@ -409,7 +424,7 @@ padding-bottom: 5px;
 	height: 40px;
 	background-color: rgba(255, 255, 255, 1);
 	color: #EB762F;
-	font-size: 16px;
+	font-size: calc(0.8em + 1vw);
 	font-weight: 700;
 	border: none;
 	cursor: pointer;
@@ -531,28 +546,32 @@ padding-bottom: 5px;
 
 .flex_titulo_portada{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	width: fit-content;
 }
 .contenedor_nombre_empresa{
+	display: flex;
+	justify-content: center;
 }
 
 .txt_nombre_empresa{
 	font-family: montserrat_bold;
-	font-size: 55px;
-
+	font-size: calc(3.2em + 1vw);
+	
 }
 
 .contenedor_slogan_empresa{
-	font-family: montserrat_medium;
+	display: flex;
+	justify-content: center;
 	margin-top: -35px;
-	margin-left: 5px;
+	
 }
 
 .txt_slogan_empresa{
-	
-	font-size: 15px;
+	font-family: montserrat_medium;
+	font-size: calc(0.7em + 1vw);
 
 }
 
@@ -689,15 +708,14 @@ width: 50%;
 
 	.flex-container_titulo{
 		padding-top: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 0px;
 		padding-left: 10px;
 		padding-right: 10px;
 		display: flex;
 		align-items: flex-start;
 		justify-content: flex-start;
-		flex-direction: column;
 		flex-wrap: nowrap;
-
+		/*background-color: paleturquoise;*/
 
 	}
 
@@ -709,7 +727,8 @@ width: 50%;
 
 	.txt_titulo{
 
-		font-size: 18px;
+		font-size: calc(1em + 1vw);
+
 
 	}
 
@@ -736,52 +755,27 @@ width: 50%;
 
 	.div_flex-container_contenido_global{
 		position: absolute;
-		top: 150%;
+		top: 0%;
 		width: 100%;
+		margin-top: -5vh;
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
 		flex-direction: row;
 		z-index: 0;
 		overflow: hidden;
-		padding-top: 20px;
-		padding-bottom: 20px;
-
-	}
-
-	.div_svg_contenido{
-		position: absolute;
-		z-index: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		
-		left: 50%;
-		z-index: 1;
-		
-	}
-
-	.svg_contenido{
-		width: 90%;
 
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 	.flex-container_contenido{
-		padding-top: 10px;
-		padding-bottom: 10px;		
+		padding-top: 0px;
+		padding-bottom: 0px;	
+		/*background-color: pink;*/
 	}
 
 	.slides{
@@ -869,6 +863,13 @@ width: 50%;
 
 	.titulo_principal_contenido{
 		padding-left: 15px;
+		display: flex;
+	justify-content: flex-start; /* "space-between" (DEJAR ESPACIO ENTE ELEMENTOS*/
+	/*COLOCAR LOS ELEMENTOS EN VARIAR LINEAS*/
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: 5px;
+		
 		
 		
 
@@ -876,18 +877,19 @@ width: 50%;
 
 	.txt_titulo_principal_contenido{
 
-		font-size: 16px;
+		font-size: calc(0.9em + 1vw);
+
 
 	}
 
 	.txt_contenido{
 
-		font-size: 14px;
+		font-size: calc(0.7em + 1vw);
 	}
 
 	.flex-container_contenido_2{
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		/*background-color: white;*/
 		/*box-shadow: 2px 4px 8px rgba(0,0,0,0.1);*/
 		
@@ -911,10 +913,10 @@ width: 50%;
 	}
   .formulario .checkbox label {
     cursor: pointer;
-    color: #EB762F;
+    color: #EC8140;
     position: relative;
     padding: 5px 15px 5px 51px;
-    font-size: 1em;
+    font-size: calc(0.7em + 1vw);
     border-radius: 5px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -932,7 +934,7 @@ width: 50%;
       	left: 15px;
       	border-radius: 50%;
       	background: none;
-      	border: 3px solid #EB762F; }
+      	border: 3px solid #EC8140; }
  
   .formulario .checkbox label:before {
     	border-radius: 3px; }
@@ -941,7 +943,7 @@ width: 50%;
     .formulario .checkbox input[type="checkbox"]:checked + label:before {
       	display: none; }
     .formulario .checkbox input[type="checkbox"]:checked + label {
-      	background: /*rgba(228,52,44,0.8);*/#EB762F;
+      	background: /*rgba(228,52,44,0.8);*/#ff9e3c;
       	color: #fff;
       	padding: 5px 8px; 
 		;
@@ -990,7 +992,7 @@ width: 50%;
 		border-radius: 3px;
 		background-color: #e6e6e6;
 		border: 2px solid transparent;
-		font-size: 14px;
+		font-size: calc(0.4em + 1vw);
 		outline: none;
 		transition: 1s all;
 		visibility:hidden;
@@ -1015,14 +1017,14 @@ width: 50%;
 	
 
 	#txtArea_contenido2{
-		width: 40%;
+		width: 50%;
 		margin-top: 5px;
 		border: 2px solid transparent;
 		border-radius: 3px;
 		box-sizing: border-box;
 		background-color: #e6e6e6;
 		outline: none;
-		font-size: 14px;
+		font-size: calc(0.4em + 1vw);
 		resize: none;
 		transition: 1s all;
 	}
@@ -1060,7 +1062,7 @@ width: 50%;
 		box-sizing: border-box;
 		background-color: #e6e6e6;
 		outline: none;
-		font-size: 14px;
+		font-size: calc(0.5em + 1vw);
 		resize: none;
 		transition: 2s all;
 	}
@@ -1099,6 +1101,7 @@ width: 50%;
 	position: relative;
 	width: 100%;
 }
+
 .sliderValue span{
 	position: absolute;
 	height: 45px;
@@ -1111,7 +1114,10 @@ width: 50%;
 	color: #fff;
 	transform-origin: bottom;
 	transition: transform 0.3s ease-in-out;
+	font-family: letra;
+	font-size: calc(0.8em + 1vw);
 }
+
 .sliderValue span.show{
 	transform: translateX(-60%) scale(1);
 }
@@ -1192,6 +1198,7 @@ width: 50%;
 	padding-bottom: 10px;
 	text-align: center;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+	font-size: calc(1em + 1vw);
 	
 	
 
@@ -1200,7 +1207,8 @@ width: 50%;
 #mensaje_puntuacion{
 
 	color: #EB762F;
-	font-size: 15px;
+	font-family: letra;
+	
 
 }
 
@@ -1214,7 +1222,7 @@ width: 50%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	background: #EB762F;
+	background: #EB762F; 
 	color: #fff;
 	/*font-family: 'Roboto', sans-serif;*/
 	font-weight: 500;
@@ -1225,6 +1233,8 @@ width: 50%;
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
+	/*font-size: 13px;*/
+	font-size: calc(0.6em + 1vw);
 }
 
 .boton_aceptar span {
@@ -1521,7 +1531,6 @@ width: 50%;
 	.boton_aceptar{
 		margin-top: 20px;
 		margin-left: 20px;
-		font-size: 13px;
 		padding: 5px;
 	}
 
@@ -1530,10 +1539,12 @@ width: 50%;
 	.boton_aceptar#boton_principal{
 		width: 100px;
 		height: 40px;
+		font-size: calc(0.6em + 1vw);
 	}
 	
 	.boton_aceptar#boton_principal span {
 		left: 20%;
+		
 	}
 		
 	.boton_aceptar#boton_principal:hover .icono {
@@ -1623,10 +1634,57 @@ width: 50%;
 @media (min-width: 577px) and (max-width: 767px){
 
 
-	.titulo{
+
+	.flex_titulo_modal{
+		display: flex;
+		justify-content: flex-start; /* "space-between" (DEJAR ESPACIO ENTE ELEMENTOS*/
+		/*COLOCAR LOS ELEMENTOS EN VARIAR LINEAS*/
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-left: 5px;
 		
-		margin-top: 10px;
+		
 	}
+	
+	.txt_nombre_empresa_modal{
+		font-family: montserrat_bold;
+		font-size: 70px;
+	}
+	
+	.txt_slogan_empresa_modal{
+		font-family: montserrat_medium;
+		font-size: 20px;
+	
+	}
+
+
+	.flex_titulo_modal .dynamic-txts{
+		height: 90px;
+		line-height: 90px;
+		overflow: hidden;
+		margin-top: 20px;
+		padding-right: 10px;
+	  }
+
+
+	
+	.contenedor_hand_movil{
+		position: absolute;
+		bottom: 10%;
+		left:2%;
+		z-index: 1;
+		width: 45%;
+	}
+	
+	.contenedor_hand{
+		position: absolute;
+		bottom: 32%;
+		right:2%;
+		z-index: 1;
+		width: 50%;
+	}
+	 
+
 
 	.fondo_global{
 
@@ -1653,10 +1711,13 @@ width: 50%;
 		
 	}
 
+
+
 	.range{
 	
 		margin-top: 70px;
 		margin-left: 20px;
+		margin-right: 180px;
 		margin-bottom: 20px;
 	}
 
@@ -1674,7 +1735,7 @@ width: 50%;
 
 		
 		margin-left: 30px;
-
+		margin-right: 190px;
 		
 	}
 
@@ -1762,7 +1823,7 @@ width: 50%;
 	
 
 	.checkbox{
-		font-size: 15px;
+		
 	}
 
 	
